@@ -1,0 +1,47 @@
+.item_cards {
+    display: flex;
+    margin: 10px;
+   cursor: pointer;
+}
+
+.item_card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #CCD5D6;
+    border-radius: 2px;
+    position: relative;
+}
+.item_card_image > img {
+    width: 300px;
+    height: 180px;
+    object-fit: contain;
+}
+
+.item_card_content {
+    padding: 5px;
+}
+
+.item_card_content > p:first-child {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.item_card_content > p:last-child > span {
+    display: inline-block;
+    margin-left: 60px;
+    margin-top: 5px;
+}
+
+.item_card_content > p {
+    font-size: 1rem;
+    margin-left: 20px;
+    font-weight: lighter;
+}
+
+.heart_icon {
+    display: block !important;
+   margin-left: auto;
+}
+

@@ -1,0 +1,132 @@
+.popup {
+    background-color: white;
+    width: 350px;
+    height: 600px;
+}
+
+.popup_child {
+   display: flex;
+   flex-direction: column;
+}
+
+.popup_child > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.popup_child > div:nth-child(2) > button {
+    width: 90%;
+    padding: 15px;
+    background-color: white;
+    border: 2px solid black;
+    margin: 7px 0;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.popup_child > div:nth-child(2) > button:hover {
+    border: 5px solid black;
+}
+
+.popup_child > div:last-child > p {
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.popup_child > :first-child {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+}
+
+.slider {
+    width: 100%;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.slider_image > img {
+    object-fit: cover;
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 400px){
+    .popup {
+        width: 270px;
+    }
+}
+
+.signInWithEmail_child > div:nth-child(2) {
+    text-align: center;
+    color: #002F34;
+    margin-top: 40px;
+}
+
+.signInWithEmail_child > div:nth-child(3) > div {
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+.signInWithEmail_child > div:nth-child(3) > div > p {
+    text-align: center;
+    opacity: 0.6;
+    font-size: 0.8rem;
+}
+
+.signInWithEmail_child > div:nth-child(3) > form > button {
+    display: block;
+    margin: 0 auto;
+    background-color: #002F34;
+    color: white;
+    width: 90%;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+}
+
+.signInWithEmail_child > div:nth-child(3) > form > button:hover {
+    border: 5px solid #002F34;
+    background-color: white;
+    color: #002F34;
+    padding: 10px;
+}
+
+.signInWithEmail_child > div:nth-child(3) > form > input {
+    display: block;
+    margin: 20px auto 50px auto;
+    width: 90%;
+    padding: 15px;
+    outline: none !important;
+    border: 2px solid black;
+    margin-bottom: 80px;
+    border-radius: 5px;
+}
+
+.signInWithEmail_child > div:last-child > form > input::placeholder {
+    font-size: 1rem;
+}
+
+.signInWithEmail_child > div:last-child > form > input:focus {
+    border: 2px solid #23E5DB;
+}
+
+.signInWithEmail_child > div:first-child {
+    text-align: end;
+    margin-right: 15px;
+}
+
+
+
+

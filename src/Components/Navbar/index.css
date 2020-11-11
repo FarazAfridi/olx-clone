@@ -1,0 +1,189 @@
+.navbar {
+    background-color: #F7F8F9;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.navbar_logo {
+    width: 40px;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.navbar_search {
+    display: flex;
+    width: 40%;
+}
+.navbar_search > input {
+    width: 100%;
+    padding: 15px;
+    outline: none !important;
+    border: 2px solid black;
+}
+
+.navbar_search > input::placeholder {
+    font-size: 1rem;
+}
+
+.navbar_search > input:focus {
+    border: 2px solid #23E5DB;
+}
+
+.navbar_search > .input_search{
+    color: white;
+    background-color: #002F34;
+    padding: 5px;
+    font-size: 49px !important;
+    cursor: pointer;
+}
+
+.navbar_signUp {
+    width: 160px;
+    display: flex;
+    align-items: center;
+    margin: 0 5px;
+}
+
+.increase_width {
+    width: 250px;
+}
+
+.navbar_signUp > span{
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #002F34;
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.navbar_signUp > span:hover {
+    border-bottom: none;
+}
+
+.navbar_signUp > button {
+    font-size: 1.1rem;
+    border-radius: 30px;
+    height: 40px;
+    width: 100px;
+    background:white;
+    color: #002F34;
+    outline: none;
+    cursor: pointer;
+}
+
+.input_icon {
+    font-size: 2rem !important;
+}
+
+.navbar_location  {
+    width: 300px;
+    padding: 5px;
+    outline: none !important;
+    border: 2px solid black;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+}
+
+.navbar_location > input {
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.navbar_location:focus-within {
+    border: 2px solid #23E5DB;
+}
+.navbar_signUp > div {
+    display: flex;
+}
+.navbar_signUp > div > span {
+    display: block;
+    margin-right: 5px;
+}
+.signInIcons {
+    font-size: 28px !important;
+    margin: 10px;
+}
+
+.profile_popup {
+    width: 300px;
+    cursor: pointer;
+    box-sizing: border-box;
+    position: absolute;
+    right: 11%;
+    top: 10%;
+    background-color: white;
+    z-index: 1;
+    box-shadow: 0.2px 0.2px 0.2px 0.2px black;
+}
+
+.profile_popup > div:first-child {
+    display: flex;
+    margin-left: 20px;
+    margin-top: 10px;
+    border-bottom: 1px solid gray;
+}
+
+.profile_popup > div:first-child > div:first-child {
+    margin-right: 5px;
+}
+
+.profile {
+   font-size: 5rem !important;
+}
+
+.profile_popup > div:first-child > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile_popup > div:first-child > div:nth-child(2) > p:last-child {
+    text-decoration: underline;
+}
+
+.profile_popup > div:not(:first-child) {
+    display: flex;
+    height: 50px;
+    align-items: center;
+}
+
+.profile_popup > div:not(:first-child):hover {
+    background-color: #C8F8F6;
+}
+
+.profile_icon {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+@media only screen and (max-width: 650px){
+    .navbar_location {
+        display: none;
+    }
+    .navbar_search {
+        display: none;
+    }
+    .navbar {
+        display:  flex;
+        justify-content: space-between;
+    }
+    .navbar_signUp {
+        margin: 0;
+    }
+    .profile_popup {
+        right: 20%;
+        width: 260px;
+    }
+}
+
+

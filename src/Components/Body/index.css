@@ -1,0 +1,30 @@
+.body_ad {
+    overflow: hidden;
+}
+
+.body_ad > img {
+    width: 100%;
+    height: 255px;
+    object-fit: cover;
+    display: block;
+}
+
+.body > h1 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-weight: 500;
+    margin-left: 44px;
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+@media only screen and (max-width: 760px) {
+    .body_ad > img {
+        display: none;
+    }
+  }
